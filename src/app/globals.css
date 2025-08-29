@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --brand-teal: #114B5F;
+  --brand-coral: #F45B69;
+  --brand-sand: #F6E8D7;
+}
+
+html, body {
+  @apply bg-white text-neutral-900;
+  font-family: theme(fontFamily.body);
+}
+
+a { @apply underline-offset-4 decoration-transparent transition; }
+a:hover { @apply decoration-coral; }
+
+/* Sticky header space fix */
+main { min-height: 60vh; }
+
+.halo:hover { box-shadow: 0 0 0 6px rgba(244,91,105,0.12); transition: box-shadow .2s ease; }
